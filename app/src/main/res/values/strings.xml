@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="t1">Happy Birthday,</string>
+    <string name="t2" translatable="false">wxy</string>
+    <string name="t3" translatable="false">from: w</string>
+    <string name="str1" translatable="false">hello</string>
+    <string name="hint1" translatable="false">input your name</string>
+    <string name="btn1" translatable="false">OK</string>
+</resources>
