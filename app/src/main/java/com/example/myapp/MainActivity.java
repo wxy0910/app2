@@ -26,6 +26,6 @@ import android.widget.TextView;
         Log.i("main","clicked");
         EditText input =findViewById(R.id.editText);
         String str =input.getText().toString();
-        out.setText("Hello," +str);
+        out.setText("Hi," +str);
     }
 }

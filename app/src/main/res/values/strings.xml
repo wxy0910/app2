@@ -4,6 +4,8 @@
     <string name="t2" translatable="false">wxy</string>
     <string name="t3" translatable="false">from: w</string>
     <string name="str1" translatable="false">hello</string>
+    <string name="str2" translatable="false">华氏度是：</string>
     <string name="hint1" translatable="false">input your name</string>
+    <string name="hint2" translatable="false">请输入温度</string>
     <string name="btn1" translatable="false">OK</string>
 </resources>
