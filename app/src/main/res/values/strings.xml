@@ -8,4 +8,8 @@
     <string name="hint1" translatable="false">input your name</string>
     <string name="hint2" translatable="false">请输入温度</string>
     <string name="btn1" translatable="false">OK</string>
+    <string name="point1" translatable="false">+ 1 point</string>
+    <string name="point2" translatable="false">+ 2 points</string>
+    <string name="point3" translatable="false">+ 3 points</string>
+    <string name="btn_reset" translatable="false">reset</string>
 </resources>

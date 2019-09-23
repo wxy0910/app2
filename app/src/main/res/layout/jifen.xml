@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp"
+    android:visibility="visible"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="TeamA"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="60dp" />
+    <Button
+        android:id="@+id/btn_3point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/point3"
+        android:onClick="btn_3point"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:id="@+id/btn_2point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/point2"
+        android:onClick="btn_2point"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:id="@+id/btn_1point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/point1"
+        android:onClick="btn_1point"
+        android:layout_marginBottom="60dp"/>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:onClick="btn_reset"
+        android:text="@string/btn_reset" />
+
+</LinearLayout>
