@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp"
+    tools:context=".Main3Activity">
+
+    <EditText
+        android:id="@+id/inputRMB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/hint3"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:text="@string/str1"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:id="@+id/btndollar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:onClick="btndollar"
+        android:text="@string/btndollar" />
+
+    <Button
+        android:id="@+id/btneuro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:onClick="btneuro"
+        android:text="@string/btneuro" />
+    <Button
+    android:id="@+id/btnwon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:onClick="btnwon"
+    android:text="@string/btnwon" />
+
+
+</LinearLayout>
