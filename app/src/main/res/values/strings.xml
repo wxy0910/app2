@@ -16,4 +16,5 @@
     <string name="btndollar" translatable="false">DOLLAR</string>
     <string name="btneuro" translatable="false">EURO</string>
     <string name="btnwon" translatable="false">WON</string>
+    <string name="btnconfig" translatable="false">CONFIG</string>
 </resources>

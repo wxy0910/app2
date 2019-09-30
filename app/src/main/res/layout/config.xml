@@ -6,54 +6,41 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="50dp"
-    tools:context=".Main3Activity">
-
+    tools:context=".configActivity" >
     <EditText
-        android:id="@+id/inputRMB"
+        android:id="@+id/dollar_rate_key"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:ems="10"
         android:inputType="number"
-        android:hint="@string/hint3"
         android:textSize="20dp" />
 
-    <TextView
-        android:id="@+id/hello"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:gravity="center"
-        android:textSize="40dp"
-        android:text="@string/str1"
-        android:layout_marginBottom="20dp"/>
-    <Button
-        android:id="@+id/btndollar"
+    <EditText
+        android:id="@+id/euro_rate_key"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:onClick="btndollar"
-        android:text="@string/btndollar" />
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/won_rate_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20dp" />
 
     <Button
-        android:id="@+id/btneuro"
+        android:id="@+id/btnsave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:onClick="btneuro"
-        android:text="@string/btneuro" />
-    <Button
-    android:id="@+id/btnwon"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="20dp"
-    android:onClick="btnwon"
-    android:text="@string/btnwon" />
+        android:onClick="btnsave"
+        android:text="SAVE" />
 
-    <Button
-        android:id="@+id/btnconfig"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:onClick="btnconfig"
-        android:text="@string/btnconfig" />
+
 </LinearLayout>
