@@ -25,9 +25,9 @@ public class configActivity extends AppCompatActivity {
            //  newDollar=bdl.getFloat("key_dollar");
             // newEuro=bdl.getFloat("key_euro");
              //newWon=bdl.getFloat("key_won");
-             //input1.setText(String.valueOf(newDollar));
-             //input2.setText(String.valueOf(newEuro));
-             //input3.setText(String.valueOf(newWon));
+             input1.setText(String.valueOf(newDollar));
+             input2.setText(String.valueOf(newEuro));
+             input3.setText(String.valueOf(newWon));
          //}
 
         SharedPreferences sharedpreferences=getSharedPreferences("myrate",Main3Activity.MODE_PRIVATE);
