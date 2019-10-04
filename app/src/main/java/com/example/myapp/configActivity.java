@@ -2,6 +2,7 @@ package com.example.myapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -15,25 +16,22 @@ public class configActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.config);
-        //Intent config=getIntent();
-       // Bundle bdl;
+        Intent config=getIntent();
+        Bundle bdl;
          input1 = findViewById(R.id.dollar_rate_key);
          input2 = findViewById(R.id.euro_rate_key);
          input3 = findViewById(R.id.won_rate_key);
-        // bdl=config.getExtras();
-         //if(bdl!=null){
-           //  newDollar=bdl.getFloat("key_dollar");
-            // newEuro=bdl.getFloat("key_euro");
-             //newWon=bdl.getFloat("key_won");
+         bdl=config.getExtras();
+         if(bdl!=null){
+             newDollar=bdl.getFloat("key_dollar");
+             newEuro=bdl.getFloat("key_euro");
+             newWon=bdl.getFloat("key_won");
              input1.setText(String.valueOf(newDollar));
              input2.setText(String.valueOf(newEuro));
              input3.setText(String.valueOf(newWon));
-         //}
+         }
 
-        SharedPreferences sharedpreferences=getSharedPreferences("myrate",Main3Activity.MODE_PRIVATE);
-        newDollar=sharedpreferences.getFloat("key_dollar",0.0f);
-        newEuro=sharedpreferences.getFloat("key_euro",0.0f);
-        newWon=sharedpreferences.getFloat("key_won",0.0f);
+
     }
 
 
@@ -45,12 +43,12 @@ public class configActivity extends AppCompatActivity {
         newEuro = Float.parseFloat(str2);
         newWon = Float.parseFloat(str3);
         Intent intent=getIntent();
-       // Bundle bdl=new Bundle();
-       // bdl.putFloat("key_dollar",newDollar);
-       // bdl.putFloat("key_euro",newEuro);
-       // bdl.putFloat("key_won",newWon);
-       // intent.putExtras(bdl);
-        SharedPreferences sp=getSharedPreferences("myrate",configActivity.MODE_PRIVATE);
+        Bundle bdl=new Bundle();
+        bdl.putFloat("key_dollar",newDollar);
+        bdl.putFloat("key_euro",newEuro);
+        bdl.putFloat("key_won",newWon);
+        intent.putExtras(bdl);
+        SharedPreferences sp=getSharedPreferences("myrate", Activity.MODE_PRIVATE);
         SharedPreferences.Editor editor=sp.edit();
         editor.putFloat("key_dollar",newDollar);
         editor.putFloat("key_euro",newEuro);
