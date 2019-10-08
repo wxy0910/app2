@@ -1,8 +1,5 @@
 package com.example.myapp;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -16,13 +13,16 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 public class Main3Activity extends AppCompatActivity implements Runnable{
 
@@ -83,9 +83,9 @@ public class Main3Activity extends AppCompatActivity implements Runnable{
         msg.obj="Hello from run()";
         handler.sendMessage(msg);
         //获取网络数据
-        URL url = null;
+        /*URL url = null;
         try {
-            url = new URL("http://www.usd-cny.com/icbc.htm");
+            url = new URL("http://www.usd-cny.com/bankofchina.htm");
             HttpURLConnection http = (HttpURLConnection) url.openConnection();
             InputStream in = http.getInputStream();
 
@@ -93,6 +93,13 @@ public class Main3Activity extends AppCompatActivity implements Runnable{
             Log.i(TAG, "run: html=" + html);
         }catch (MalformedURLException e) {
             e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } */
+        Document doc = null;
+        try {
+            doc = Jsoup.connect("http://www.usd-cny.com/bankofchina.htm").get();
+            Log.i(TAG,"run"+doc.title());
         } catch (IOException e) {
             e.printStackTrace();
         }
