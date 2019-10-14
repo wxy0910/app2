@@ -7,7 +7,11 @@
         android:id="@+id/menu_set"
         android:icon="@android:drawable/ic_menu_manage"
         android:title="set"
-        app:showAsAction="ifRoom"/>
-
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/open_list"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="@string/lable_open_list"
+        app:showAsAction="never" />
 
 </menu>

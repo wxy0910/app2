@@ -17,4 +17,5 @@
     <string name="btneuro" translatable="false">EURO</string>
     <string name="btnwon" translatable="false">WON</string>
     <string name="btnconfig" translatable="false">CONFIG</string>
+    <string name="lable_open_list">OpenList</string>
 </resources>
