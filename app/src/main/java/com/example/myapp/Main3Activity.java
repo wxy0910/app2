@@ -267,7 +267,7 @@ public class Main3Activity extends AppCompatActivity implements Runnable{
     {     if(item.getItemId()==R.id.menu_set){
 
         // 事件处理代码
-       Intent config = new Intent(this,configActivity.class);
+        Intent config = new Intent(this,configActivity.class);
         Bundle bdl=new Bundle();
         bdl.putFloat("key_dollar",dollarRate);
         bdl.putFloat("key_euro",euroRate);
@@ -277,7 +277,7 @@ public class Main3Activity extends AppCompatActivity implements Runnable{
 
     }else if(item.getItemId()==R.id.open_list){
         //打开列表窗口
-        Intent list=new Intent(this,RateListActivity.class);
+        Intent list=new Intent(this,MyList2Activity.class);
         startActivity(list);
     }
 
