@@ -17,5 +17,8 @@
     <string name="btneuro" translatable="false">EURO</string>
     <string name="btnwon" translatable="false">WON</string>
     <string name="btnconfig" translatable="false">CONFIG</string>
-    <string name="lable_open_list">OpenList</string>
+    <string name="lable_open_list" translatable="false">OpenList</string>
+    <string name="rdo_home_label" translatable="false">首页</string>
+    <string name="rdo_func_label" translatable="false">功能</string>
+    <string name="rdo_setting_label" translatable="false">设置</string>
 </resources>
